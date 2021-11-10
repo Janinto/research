@@ -36,7 +36,7 @@ class HomeModel: ObservableObject{
         let alert = UIAlertController(title: "채팅에 접속하세요!", message: "닉네임을 적으세요", preferredStyle: .alert)
         
         alert.addTextField { (txt) in
-            txt.placeholder = "eg Kavsoft"
+            txt.placeholder = "Reborn Soft"
         }
         
         let join = UIAlertAction(title: "join", style: .default) { (_) in
@@ -63,7 +63,7 @@ class HomeModel: ObservableObject{
     
     func readAllMsgs(){
         
-        ref.collection("Msgs").addSnapshotListener { (snap, err)  in
+        ref.collection("Msgs").order(by: "timeStamp", descending: false).addSnapshotListener { (snap, err)  in
             
             if err != nil{
                 print(err!.localizedDescription)
@@ -77,27 +77,27 @@ class HomeModel: ObservableObject{
                     
                 
                 
-//                if doc.type == .added{
-//
-//                    let msg = try! doc.document.data(as: MsgModel.self)!
-//
-//                    DispatchQueue.main.async {
-//                        self.msgs.append(msg)
-//                    }
-//                }
-//
-                
                 if doc.type == .added{
-                    do{
-                             let msg = try doc.document.data(as: MsgModel.self)!
-         
-                             DispatchQueue.main.async {
-                                 self.msgs.append(msg)
-                             }
-                    }catch{
-                            print(error.localizedDescription)
-                        }
+
+                    let msg = try! doc.document.data(as: MsgModel.self)!
+
+                    DispatchQueue.main.async {
+                        self.msgs.append(msg)
+                    }
                 }
+
+                
+//                if doc.type == .added{
+//                    do{
+//                             let msg = try doc.document.data(as: MsgModel.self)!
+//
+//                             DispatchQueue.main.async {
+//                                 self.msgs.append(msg)
+//                             }
+//                    }catch{
+//                            print(error.localizedDescription)
+//                        }
+//                }
                 
          
             }

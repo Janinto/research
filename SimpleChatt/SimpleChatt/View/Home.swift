@@ -18,7 +18,7 @@ struct Home: View {
             
             HStack{
                 
-                Text("Global Chat")
+                Text("Rebornsoft")
                     .font(.title)
                     .fontWeight(.heavy)
                     .foregroundColor(.white)
@@ -64,7 +64,7 @@ struct Home: View {
             
             HStack(spacing: 15){
                 
-                TextField("메세지를 입력하세요.", text: $homeData.txt)
+                TextField("메세지를 입력하세요", text: $homeData.txt)
                     .padding(.horizontal)
                 // Fixed Height For Animaition...
                     .frame(height: 45)

@@ -36,7 +36,7 @@ struct ChatRow: View {
                 Text(chatData.timeStamp,style: .time)
                     .font(.caption2)
                     .foregroundColor(.gray)
-                    .padding(chatData.user == user ? .leading : .trailing , 10)
+                    .padding(chatData.user != user ? .leading : .trailing , 10)
                 
                 
             })
@@ -49,7 +49,7 @@ struct ChatRow: View {
             
         }
         .padding(.horizontal)
-        
+            //For Scroll Reader
         .id(chatData.id
         )
         
