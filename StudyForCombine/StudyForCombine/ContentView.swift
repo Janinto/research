@@ -23,15 +23,17 @@ struct ContentView: View {
                 NavigationLink(destination: MyToggleButton(value: $value)) {
                 CustomCell(cellNum: "Binding")
                 }
-                
-                VStack{
-                    Text("Hello, \(data.name)!")
-                        .padding()
-                    Button(
-                        action: { self.data.switchName()},
-                        label: { Text(self.data.buttonTitle) }
-                    )
+                NavigationLink(destination: musicPlay()) {
+                    CustomCell(cellNum: "State and Binding(클릭시 화면 변경)")
                 }
+                NavigationLink(destination: MyData2()) {
+                    CustomCell(cellNum: "Observable and ObservedObject")
+                        .font(.custom("", size: 17))
+                }
+                NavigationLink(destination: Secure()) {
+                    CustomCell(cellNum: "SecureField(Controls)")
+                }
+                
                 
             
             }
@@ -46,20 +48,6 @@ struct ContentView: View {
     }
 }
 
-class MyData: ObservableObject {
-    @Published var name = "World"
-    @Published var buttonTitle = "Switch to Universe"
-    
-    func switchName(){
-        if name == "World" {
-            name = "Universe"
-            buttonTitle = "Switch to World"
-        } else {
-            name = "World"
-            buttonTitle = "Switch to Universe"
-        }
-    }
-}
 
 
  
@@ -83,9 +71,9 @@ struct CustomCell: View {
 
         
 
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
 

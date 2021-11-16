@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6D0BCDAC2741F43500B9EE64 /* MyToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BCDAB2741F43500B9EE64 /* MyToggleButton.swift */; };
+		6D9CBC4927433D2E005323C1 /* MyData2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9CBC4827433D2E005323C1 /* MyData2.swift */; };
+		6D9CBC4B27434D84005323C1 /* Secure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9CBC4A27434D84005323C1 /* Secure.swift */; };
+		6D9CBC4D27436169005323C1 /* musicPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9CBC4C27436169005323C1 /* musicPlay.swift */; };
 		6DE8D660273B74B3003224DE /* StudyForCombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8D65F273B74B3003224DE /* StudyForCombineApp.swift */; };
 		6DE8D662273B74B3003224DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8D661273B74B3003224DE /* ContentView.swift */; };
 		6DE8D664273B74B4003224DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DE8D663273B74B4003224DE /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		6D0BCDAB2741F43500B9EE64 /* MyToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyToggleButton.swift; sourceTree = "<group>"; };
+		6D9CBC4827433D2E005323C1 /* MyData2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData2.swift; sourceTree = "<group>"; };
+		6D9CBC4A27434D84005323C1 /* Secure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secure.swift; sourceTree = "<group>"; };
+		6D9CBC4C27436169005323C1 /* musicPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicPlay.swift; sourceTree = "<group>"; };
 		6DE8D65C273B74B3003224DE /* StudyForCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyForCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DE8D65F273B74B3003224DE /* StudyForCombineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyForCombineApp.swift; sourceTree = "<group>"; };
 		6DE8D661273B74B3003224DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +64,9 @@
 				6DE8D65F273B74B3003224DE /* StudyForCombineApp.swift */,
 				6DE8D66F273B8E7E003224DE /* ThisIsStateView.swift */,
 				6D0BCDAB2741F43500B9EE64 /* MyToggleButton.swift */,
+				6D9CBC4C27436169005323C1 /* musicPlay.swift */,
+				6D9CBC4827433D2E005323C1 /* MyData2.swift */,
+				6D9CBC4A27434D84005323C1 /* Secure.swift */,
 				6DE8D661273B74B3003224DE /* ContentView.swift */,
 				6DE8D663273B74B4003224DE /* Assets.xcassets */,
 				6DE8D665273B74B4003224DE /* Preview Content */,
@@ -144,8 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DE8D662273B74B3003224DE /* ContentView.swift in Sources */,
+				6D9CBC4D27436169005323C1 /* musicPlay.swift in Sources */,
+				6D9CBC4927433D2E005323C1 /* MyData2.swift in Sources */,
 				6DE8D660273B74B3003224DE /* StudyForCombineApp.swift in Sources */,
 				6DE8D670273B8E7E003224DE /* ThisIsStateView.swift in Sources */,
+				6D9CBC4B27434D84005323C1 /* Secure.swift in Sources */,
 				6D0BCDAC2741F43500B9EE64 /* MyToggleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
