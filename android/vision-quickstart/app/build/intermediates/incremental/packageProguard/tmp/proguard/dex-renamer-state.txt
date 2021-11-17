@@ -1,0 +1,4 @@
+#Tue Nov 16 16:35:29 KST 2021
+base.0=/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/build/intermediates/dex/proguard/minifyProguardWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

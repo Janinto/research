@@ -1,0 +1,357 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.google.mlkit.vision.demo"
+4    android:installLocation="auto"
+5    android:versionCode="11"
+6    android:versionName="1.11" >
+7    <!--
+8 CameraX libraries require minSdkVersion 21, while this quickstart app
+9    supports low to 16. Needs to use overrideLibrary to make the merger tool
+10    ignore this conflict and import the libraries while keeping the app's lower
+11    minSdkVersion value. In code, will check SDK version, before calling CameraX
+12    APIs.
+13    -->
+14    <uses-sdk
+14-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:12:5-15:63
+15        android:minSdkVersion="16"
+15-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:12:5-15:63
+16        android:targetSdkVersion="31" />
+16-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:12:5-15:63
+17
+18    <uses-feature android:name="android.hardware.camera" />
+18-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:17:5-59
+18-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:17:19-57
+19
+20    <uses-permission android:name="android.permission.INTERNET" />
+20-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:19:5-66
+20-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:19:22-64
+21    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+21-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:20:5-80
+21-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:20:22-78
+22    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+22-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:21:5-79
+22-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:21:22-77
+23    <uses-permission android:name="android.permission.CAMERA" />
+23-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:22:5-64
+23-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:22:22-62
+24
+25    <queries>
+25-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:113:5-117:15
+26        <intent>
+26-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:114:9-116:18
+27            <action android:name="android.media.action.IMAGE_CAPTURE" />
+27-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:115:13-73
+27-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:115:21-70
+28        </intent>
+29    </queries>
+30
+31    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+32    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+33    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+33-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/b0b07d668fb05669fea93be346cdaca2/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+33-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/b0b07d668fb05669fea93be346cdaca2/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
+34
+35    <application
+35-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:24:5-112:19
+36        android:name="androidx.multidex.MultiDexApplication"
+36-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:25:9-61
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.6.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/9dac8f2d3f885da11545ba42d8c04a39/core-1.6.0/AndroidManifest.xml:24:18-86
+38        android:debuggable="true"
+39        android:icon="@drawable/logo_mlkit"
+39-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:26:9-44
+40        android:label="@string/app_name"
+40-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:27:9-41
+41        android:testOnly="true"
+42        android:theme="@style/Theme.AppCompat" >
+42-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:28:9-47
+43        <meta-data
+43-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:30:9-32:68
+44            android:name="com.google.android.gms.version"
+44-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:31:13-58
+45            android:value="@integer/google_play_services_version" />
+45-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:32:13-66
+46
+47        <!--
+48          Optional: Add it to automatically download ML model to device after
+49          your app is installed.
+50        -->
+51        <meta-data
+51-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:36:9-38:62
+52            android:name="com.google.mlkit.vision.DEPENDENCIES"
+52-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:37:13-64
+53            android:value="barcode,face,ocr,ica,custom_ica" />
+53-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:38:13-60
+54
+55        <activity
+55-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:40:9-48:20
+56            android:name="com.google.mlkit.vision.demo.EntryChoiceActivity"
+56-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:41:13-48
+57            android:exported="true"
+57-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:42:13-36
+58            android:theme="@style/AppTheme" >
+58-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:43:13-44
+59            <intent-filter>
+59-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:44:13-47:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:45:17-68
+60-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:45:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:46:17-76
+62-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:46:27-74
+63            </intent-filter>
+64        </activity>
+65        <activity
+65-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:50:9-53:20
+66            android:name="com.google.mlkit.vision.demo.java.ChooserActivity"
+66-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:51:13-49
+67            android:exported="true" >
+67-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:52:13-36
+68        </activity>
+69        <activity
+69-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:55:9-59:20
+70            android:name="com.google.mlkit.vision.demo.java.LivePreviewActivity"
+70-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:56:13-53
+71            android:exported="true"
+71-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:57:13-36
+72            android:theme="@style/AppTheme" >
+72-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:58:13-44
+73        </activity>
+74        <activity
+74-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:61:9-65:20
+75            android:name="com.google.mlkit.vision.demo.java.CameraXLivePreviewActivity"
+75-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:62:13-60
+76            android:exported="true"
+76-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:63:13-36
+77            android:theme="@style/AppTheme" >
+77-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:64:13-44
+78        </activity>
+79        <activity
+79-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:67:9-71:20
+80            android:name="com.google.mlkit.vision.demo.java.CameraXSourceDemoActivity"
+80-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:68:13-59
+81            android:exported="true"
+81-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:69:13-36
+82            android:theme="@style/AppTheme" >
+82-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:70:13-44
+83        </activity>
+84        <activity
+84-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:73:9-77:20
+85            android:name="com.google.mlkit.vision.demo.java.StillImageActivity"
+85-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:74:13-52
+86            android:exported="true"
+86-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:75:13-36
+87            android:theme="@style/AppTheme" >
+87-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:76:13-44
+88        </activity>
+89        <activity
+89-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:79:9-82:20
+90            android:name="com.google.mlkit.vision.demo.kotlin.ChooserActivity"
+90-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:80:13-51
+91            android:exported="true" >
+91-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:81:13-36
+92        </activity>
+93        <activity
+93-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:84:9-88:20
+94            android:name="com.google.mlkit.vision.demo.kotlin.LivePreviewActivity"
+94-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:85:13-55
+95            android:exported="true"
+95-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:86:13-36
+96            android:theme="@style/AppTheme" >
+96-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:87:13-44
+97        </activity>
+98        <activity
+98-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:90:9-94:20
+99            android:name="com.google.mlkit.vision.demo.kotlin.CameraXLivePreviewActivity"
+99-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:91:13-62
+100            android:exported="true"
+100-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:92:13-36
+101            android:theme="@style/AppTheme" >
+101-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:93:13-44
+102        </activity>
+103        <activity
+103-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:96:9-100:20
+104            android:name="com.google.mlkit.vision.demo.kotlin.CameraXSourceDemoActivity"
+104-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:97:13-61
+105            android:exported="true"
+105-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:98:13-36
+106            android:theme="@style/AppTheme" >
+106-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:99:13-44
+107        </activity>
+108        <activity
+108-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:102:9-106:20
+109            android:name="com.google.mlkit.vision.demo.kotlin.StillImageActivity"
+109-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:103:13-54
+110            android:exported="true"
+110-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:104:13-36
+111            android:theme="@style/AppTheme" >
+111-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:105:13-44
+112        </activity>
+113        <activity
+113-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:108:9-110:39
+114            android:name="com.google.mlkit.vision.demo.preference.SettingsActivity"
+114-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:109:13-56
+115            android:exported="false" />
+115-->/Users/reborn-m1macmini1/Desktop/mlkit-master/android/vision-quickstart/app/src/main/AndroidManifest.xml:110:13-37
+116
+117        <service
+117-->[com.google.mlkit:object-detection:16.2.7] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/3108443303a20bc1ad85f86ff0ada582/jetified-object-detection-16.2.7/AndroidManifest.xml:8:9-14:19
+118            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+118-->[com.google.mlkit:object-detection:16.2.7] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/3108443303a20bc1ad85f86ff0ada582/jetified-object-detection-16.2.7/AndroidManifest.xml:9:13-91
+119            android:directBootAware="true"
+119-->[com.google.mlkit:common:17.4.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/fe88ca810f8e25f49fd633fe569a4d5d/jetified-common-17.4.0/AndroidManifest.xml:17:13-43
+120            android:exported="false" >
+120-->[com.google.mlkit:object-detection:16.2.7] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/3108443303a20bc1ad85f86ff0ada582/jetified-object-detection-16.2.7/AndroidManifest.xml:10:13-37
+121            <meta-data
+121-->[com.google.mlkit:object-detection:16.2.7] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/3108443303a20bc1ad85f86ff0ada582/jetified-object-detection-16.2.7/AndroidManifest.xml:11:13-13:85
+122                android:name="com.google.firebase.components:com.google.mlkit.vision.objects.defaults.internal.DefaultObjectsRegistrar"
+122-->[com.google.mlkit:object-detection:16.2.7] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/3108443303a20bc1ad85f86ff0ada582/jetified-object-detection-16.2.7/AndroidManifest.xml:12:17-136
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.mlkit:object-detection:16.2.7] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/3108443303a20bc1ad85f86ff0ada582/jetified-object-detection-16.2.7/AndroidManifest.xml:13:17-82
+124            <meta-data
+124-->[com.google.mlkit:object-detection-custom:16.3.3] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/661ee69636ad8244d4a83cc21dc6f621/jetified-object-detection-custom-16.3.3/AndroidManifest.xml:11:13-13:85
+125                android:name="com.google.firebase.components:com.google.mlkit.vision.objects.custom.internal.CustomObjectsRegistrar"
+125-->[com.google.mlkit:object-detection-custom:16.3.3] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/661ee69636ad8244d4a83cc21dc6f621/jetified-object-detection-custom-16.3.3/AndroidManifest.xml:12:17-133
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.mlkit:object-detection-custom:16.3.3] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/661ee69636ad8244d4a83cc21dc6f621/jetified-object-detection-custom-16.3.3/AndroidManifest.xml:13:17-82
+127            <meta-data
+127-->[com.google.mlkit:image-labeling:17.0.5] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/614b922b952ca200ab040fbc7df8886f/jetified-image-labeling-17.0.5/AndroidManifest.xml:11:13-13:85
+128                android:name="com.google.firebase.components:com.google.mlkit.vision.label.defaults.internal.BundledLabelRegistrar"
+128-->[com.google.mlkit:image-labeling:17.0.5] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/614b922b952ca200ab040fbc7df8886f/jetified-image-labeling-17.0.5/AndroidManifest.xml:12:17-132
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.mlkit:image-labeling:17.0.5] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/614b922b952ca200ab040fbc7df8886f/jetified-image-labeling-17.0.5/AndroidManifest.xml:13:17-82
+130            <meta-data
+130-->[com.google.mlkit:image-labeling-custom:16.3.1] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/2844c5ed8848eea63649d4b29e249237/jetified-image-labeling-custom-16.3.1/AndroidManifest.xml:11:13-13:85
+131                android:name="com.google.firebase.components:com.google.mlkit.vision.label.custom.internal.CustomLabelRegistrar"
+131-->[com.google.mlkit:image-labeling-custom:16.3.1] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/2844c5ed8848eea63649d4b29e249237/jetified-image-labeling-custom-16.3.1/AndroidManifest.xml:12:17-129
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.mlkit:image-labeling-custom:16.3.1] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/2844c5ed8848eea63649d4b29e249237/jetified-image-labeling-custom-16.3.1/AndroidManifest.xml:13:17-82
+133            <meta-data
+133-->[com.google.mlkit:segmentation-selfie:16.0.0-beta2] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/454fbe4d1155eceb33e913eb55201b2d/jetified-segmentation-selfie-16.0.0-beta2/AndroidManifest.xml:12:13-14:85
+134                android:name="com.google.firebase.components:com.google.mlkit.vision.segmentation.internal.SegmentationRegistrar"
+134-->[com.google.mlkit:segmentation-selfie:16.0.0-beta2] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/454fbe4d1155eceb33e913eb55201b2d/jetified-segmentation-selfie-16.0.0-beta2/AndroidManifest.xml:13:17-130
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.mlkit:segmentation-selfie:16.0.0-beta2] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/454fbe4d1155eceb33e913eb55201b2d/jetified-segmentation-selfie-16.0.0-beta2/AndroidManifest.xml:14:17-82
+136            <meta-data
+136-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.1] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/88888c578615eb37e911bf60abfc5e05/jetified-play-services-mlkit-barcode-scanning-16.2.1/AndroidManifest.xml:12:13-14:85
+137                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+137-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.1] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/88888c578615eb37e911bf60abfc5e05/jetified-play-services-mlkit-barcode-scanning-16.2.1/AndroidManifest.xml:13:17-120
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.1] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/88888c578615eb37e911bf60abfc5e05/jetified-play-services-mlkit-barcode-scanning-16.2.1/AndroidManifest.xml:14:17-82
+139            <meta-data
+139-->[com.google.mlkit:vision-internal-vkp:18.2.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/e72596a97af97e8d0dfcc7223dc7ed67/jetified-vision-internal-vkp-18.2.0/AndroidManifest.xml:11:13-13:85
+140                android:name="com.google.firebase.components:com.google.mlkit.vision.vkp.VkpRegistrar"
+140-->[com.google.mlkit:vision-internal-vkp:18.2.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/e72596a97af97e8d0dfcc7223dc7ed67/jetified-vision-internal-vkp-18.2.0/AndroidManifest.xml:12:17-103
+141                android:value="com.google.firebase.components.ComponentRegistrar" />
+141-->[com.google.mlkit:vision-internal-vkp:18.2.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/e72596a97af97e8d0dfcc7223dc7ed67/jetified-vision-internal-vkp-18.2.0/AndroidManifest.xml:13:17-82
+142            <meta-data
+142-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/0aada430cc601f4cd853607c9fc96d77/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:12:13-14:85
+143                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+143-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/0aada430cc601f4cd853607c9fc96d77/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:13:17-114
+144                android:value="com.google.firebase.components.ComponentRegistrar" />
+144-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/0aada430cc601f4cd853607c9fc96d77/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:14:17-82
+145            <meta-data
+145-->[com.google.android.gms:play-services-mlkit-text-recognition-common:16.0.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/fd408199c20d40e47629d8a020f784ed/jetified-play-services-mlkit-text-recognition-common-16.0.0/AndroidManifest.xml:12:13-14:85
+146                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+146-->[com.google.android.gms:play-services-mlkit-text-recognition-common:16.0.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/fd408199c20d40e47629d8a020f784ed/jetified-play-services-mlkit-text-recognition-common-16.0.0/AndroidManifest.xml:13:17-114
+147                android:value="com.google.firebase.components.ComponentRegistrar" />
+147-->[com.google.android.gms:play-services-mlkit-text-recognition-common:16.0.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/fd408199c20d40e47629d8a020f784ed/jetified-play-services-mlkit-text-recognition-common-16.0.0/AndroidManifest.xml:14:17-82
+148            <meta-data
+148-->[com.google.mlkit:pose-detection-common:17.1.0-beta5] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/ea074f3aaa0d0b9939ad50a86eac2add/jetified-pose-detection-common-17.1.0-beta5/AndroidManifest.xml:11:13-13:85
+149                android:name="com.google.firebase.components:com.google.mlkit.vision.pose.internal.PoseRegistrar"
+149-->[com.google.mlkit:pose-detection-common:17.1.0-beta5] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/ea074f3aaa0d0b9939ad50a86eac2add/jetified-pose-detection-common-17.1.0-beta5/AndroidManifest.xml:12:17-114
+150                android:value="com.google.firebase.components.ComponentRegistrar" />
+150-->[com.google.mlkit:pose-detection-common:17.1.0-beta5] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/ea074f3aaa0d0b9939ad50a86eac2add/jetified-pose-detection-common-17.1.0-beta5/AndroidManifest.xml:13:17-82
+151            <meta-data
+151-->[com.google.mlkit:vision-common:16.6.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/c141c3d3be6f2f46f56d31cc33c2e28b/jetified-vision-common-16.6.0/AndroidManifest.xml:12:13-14:85
+152                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+152-->[com.google.mlkit:vision-common:16.6.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/c141c3d3be6f2f46f56d31cc33c2e28b/jetified-vision-common-16.6.0/AndroidManifest.xml:13:17-124
+153                android:value="com.google.firebase.components.ComponentRegistrar" />
+153-->[com.google.mlkit:vision-common:16.6.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/c141c3d3be6f2f46f56d31cc33c2e28b/jetified-vision-common-16.6.0/AndroidManifest.xml:14:17-82
+154            <meta-data
+154-->[com.google.mlkit:common:17.4.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/fe88ca810f8e25f49fd633fe569a4d5d/jetified-common-17.4.0/AndroidManifest.xml:20:13-22:85
+155                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+155-->[com.google.mlkit:common:17.4.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/fe88ca810f8e25f49fd633fe569a4d5d/jetified-common-17.4.0/AndroidManifest.xml:21:17-120
+156                android:value="com.google.firebase.components.ComponentRegistrar" />
+156-->[com.google.mlkit:common:17.4.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/fe88ca810f8e25f49fd633fe569a4d5d/jetified-common-17.4.0/AndroidManifest.xml:22:17-82
+157        </service>
+158        <service
+158-->[androidx.camera:camera-camera2:1.1.0-alpha10] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/27feff0b00ea9d3ffbc64d87a9cca52a/jetified-camera-camera2-1.1.0-alpha10/AndroidManifest.xml:26:9-35:19
+159            android:name="androidx.camera.core.impl.MetadataHolderService"
+159-->[androidx.camera:camera-camera2:1.1.0-alpha10] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/27feff0b00ea9d3ffbc64d87a9cca52a/jetified-camera-camera2-1.1.0-alpha10/AndroidManifest.xml:27:13-75
+160            android:enabled="false"
+160-->[androidx.camera:camera-camera2:1.1.0-alpha10] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/27feff0b00ea9d3ffbc64d87a9cca52a/jetified-camera-camera2-1.1.0-alpha10/AndroidManifest.xml:28:13-36
+161            android:exported="false" >
+161-->[androidx.camera:camera-camera2:1.1.0-alpha10] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/27feff0b00ea9d3ffbc64d87a9cca52a/jetified-camera-camera2-1.1.0-alpha10/AndroidManifest.xml:29:13-37
+162            <meta-data
+162-->[androidx.camera:camera-camera2:1.1.0-alpha10] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/27feff0b00ea9d3ffbc64d87a9cca52a/jetified-camera-camera2-1.1.0-alpha10/AndroidManifest.xml:32:13-34:89
+163                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+163-->[androidx.camera:camera-camera2:1.1.0-alpha10] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/27feff0b00ea9d3ffbc64d87a9cca52a/jetified-camera-camera2-1.1.0-alpha10/AndroidManifest.xml:33:17-103
+164                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+164-->[androidx.camera:camera-camera2:1.1.0-alpha10] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/27feff0b00ea9d3ffbc64d87a9cca52a/jetified-camera-camera2-1.1.0-alpha10/AndroidManifest.xml:34:17-86
+165        </service>
+166
+167        <provider
+167-->[com.google.mlkit:common:17.4.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/fe88ca810f8e25f49fd633fe569a4d5d/jetified-common-17.4.0/AndroidManifest.xml:9:9-13:38
+168            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+168-->[com.google.mlkit:common:17.4.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/fe88ca810f8e25f49fd633fe569a4d5d/jetified-common-17.4.0/AndroidManifest.xml:10:13-78
+169            android:authorities="com.google.mlkit.vision.demo.mlkitinitprovider"
+169-->[com.google.mlkit:common:17.4.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/fe88ca810f8e25f49fd633fe569a4d5d/jetified-common-17.4.0/AndroidManifest.xml:11:13-69
+170            android:exported="false"
+170-->[com.google.mlkit:common:17.4.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/fe88ca810f8e25f49fd633fe569a4d5d/jetified-common-17.4.0/AndroidManifest.xml:12:13-37
+171            android:initOrder="99" />
+171-->[com.google.mlkit:common:17.4.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/fe88ca810f8e25f49fd633fe569a4d5d/jetified-common-17.4.0/AndroidManifest.xml:13:13-35
+172
+173        <activity
+173-->[com.google.android.gms:play-services-base:17.6.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/eb3695de7646208bc64e4426ddd573a3/jetified-play-services-base-17.6.0/AndroidManifest.xml:23:9-26:75
+174            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+174-->[com.google.android.gms:play-services-base:17.6.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/eb3695de7646208bc64e4426ddd573a3/jetified-play-services-base-17.6.0/AndroidManifest.xml:24:13-79
+175            android:exported="false"
+175-->[com.google.android.gms:play-services-base:17.6.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/eb3695de7646208bc64e4426ddd573a3/jetified-play-services-base-17.6.0/AndroidManifest.xml:25:13-37
+176            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+176-->[com.google.android.gms:play-services-base:17.6.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/eb3695de7646208bc64e4426ddd573a3/jetified-play-services-base-17.6.0/AndroidManifest.xml:26:13-72
+177
+178        <service
+178-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/b0b07d668fb05669fea93be346cdaca2/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+179            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+179-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/b0b07d668fb05669fea93be346cdaca2/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+180            android:exported="false" >
+180-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/b0b07d668fb05669fea93be346cdaca2/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+181            <meta-data
+181-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/b0b07d668fb05669fea93be346cdaca2/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+182                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+182-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/b0b07d668fb05669fea93be346cdaca2/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+183                android:value="cct" />
+183-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/b0b07d668fb05669fea93be346cdaca2/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+184        </service>
+185        <service
+185-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/0b67044ceabbcacea62e90fd6e1fc6a0/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+186            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+186-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/0b67044ceabbcacea62e90fd6e1fc6a0/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+187            android:exported="false"
+187-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/0b67044ceabbcacea62e90fd6e1fc6a0/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+188            android:permission="android.permission.BIND_JOB_SERVICE" >
+188-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/0b67044ceabbcacea62e90fd6e1fc6a0/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+189        </service>
+190
+191        <receiver
+191-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/0b67044ceabbcacea62e90fd6e1fc6a0/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+192            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+192-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/0b67044ceabbcacea62e90fd6e1fc6a0/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+193            android:exported="false" />
+193-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/0b67044ceabbcacea62e90fd6e1fc6a0/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+194
+195        <provider
+195-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/32dbcabb8180e7916e19d9fa52e819c7/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
+196            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+196-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/32dbcabb8180e7916e19d9fa52e819c7/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:24:13-79
+197            android:authorities="com.google.mlkit.vision.demo.lifecycle-process"
+197-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/32dbcabb8180e7916e19d9fa52e819c7/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:25:13-69
+198            android:exported="false"
+198-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/32dbcabb8180e7916e19d9fa52e819c7/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:26:13-37
+199            android:multiprocess="true" />
+199-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/reborn-m1macmini1/.gradle/caches/transforms-2/files-2.1/32dbcabb8180e7916e19d9fa52e819c7/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:27:13-40
+200    </application>
+201
+202</manifest>
