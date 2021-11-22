@@ -1,0 +1,36 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale
+        android:duration="1000"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:toXScale="2.0"
+        android:toYScale="2.0"
+        />
+    <!-- duration (밀리 세컨드 1000밀리 세컨드는 1초) pivotX, pivotY는 크기를 변경하기 위한 중심축의 정보
+    50%, 50% 는 정중앙을 의미합니다. fromXScale,fromXScale은 시작 값이다 scale에 1배를 한 값으로 시작함
+    toXScale,toYScale은 끝 값 2.0이기 떄문에 Scaledl 2배된 상태에서 끝남-->
+
+
+    <scale
+        android:startOffset="1000"
+        android:duration="1000"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:toXScale="0.5"
+        android:toYScale="0.5"
+        />
+
+<!-- 원래 모습으로 돌아감 0.5인이유는   2가되었기 때문에 2-> 1로가기위해 0.5로 설정-->
+
+
+
+
+
+
+
+
+</set>
