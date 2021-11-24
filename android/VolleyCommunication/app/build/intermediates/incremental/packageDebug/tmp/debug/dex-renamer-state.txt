@@ -1,9 +1,9 @@
-#Fri Nov 19 09:43:49 KST 2021
-base.2=/Users/reborn-m1macmini1/AndroidStudioProjects/VolleyCommunication/app/build/intermediates/dex/debug/mergeProjectDexDebug/8/classes.dex
+#Tue Nov 23 11:20:44 KST 2021
+base.2=/Users/reborn-m1macmini1/Desktop/my/android/VolleyCommunication/app/build/intermediates/dex/debug/mergeProjectDexDebug/8/classes.dex
 path.2=8/classes.dex
-base.1=/Users/reborn-m1macmini1/AndroidStudioProjects/VolleyCommunication/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.1=/Users/reborn-m1macmini1/Desktop/my/android/VolleyCommunication/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 path.1=0/classes.dex
-base.0=/Users/reborn-m1macmini1/AndroidStudioProjects/VolleyCommunication/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.0=/Users/reborn-m1macmini1/Desktop/my/android/VolleyCommunication/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex

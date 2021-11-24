@@ -1,25 +1,23 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/reborn-m1macmini1/AndroidStudioProjects/VolleyCommunication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/reborn-m1macmini1/Desktop/my/android/VolleyCommunication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/Users/reborn-m1macmini1/AndroidStudioProjects/VolleyCommunication/app/src/main/res/values/themes.xml",
+                    "source": "/Users/reborn-m1macmini1/Desktop/my/android/VolleyCommunication/app/src/main/res/values/strings.xml",
                     "from": {
-                        "startLines": "2",
+                        "startLines": "1",
                         "startColumns": "4",
-                        "startOffsets": "100",
-                        "endLines": "14",
-                        "endColumns": "12",
-                        "endOffsets": "828"
+                        "startOffsets": "16",
+                        "endColumns": "56",
+                        "endOffsets": "68"
                     },
                     "to": {
-                        "startLines": "4016",
+                        "startLines": "1186",
                         "startColumns": "4",
-                        "startOffsets": "265356",
-                        "endLines": "4028",
-                        "endColumns": "12",
-                        "endOffsets": "266082"
+                        "startOffsets": "68768",
+                        "endColumns": "56",
+                        "endOffsets": "68820"
                     }
                 },
                 {
@@ -152,23 +150,6 @@
                     }
                 },
                 {
-                    "source": "/Users/reborn-m1macmini1/AndroidStudioProjects/VolleyCommunication/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "56",
-                        "endOffsets": "68"
-                    },
-                    "to": {
-                        "startLines": "1186",
-                        "startColumns": "4",
-                        "startOffsets": "68768",
-                        "endColumns": "56",
-                        "endOffsets": "68820"
-                    }
-                },
-                {
                     "source": "/Users/reborn-m1macmini1/.gradle/caches/transforms-3/d5ce58f194e6eb15743ad13effdd09da/transformed/coordinatorlayout-1.1.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,6,16",
@@ -260,7 +241,26 @@
                     }
                 },
                 {
-                    "source": "/Users/reborn-m1macmini1/AndroidStudioProjects/VolleyCommunication/app/src/main/res/values/colors.xml",
+                    "source": "/Users/reborn-m1macmini1/Desktop/my/android/VolleyCommunication/app/src/main/res/values/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "828"
+                    },
+                    "to": {
+                        "startLines": "4016",
+                        "startColumns": "4",
+                        "startOffsets": "265356",
+                        "endLines": "4028",
+                        "endColumns": "12",
+                        "endOffsets": "266082"
+                    }
+                },
+                {
+                    "source": "/Users/reborn-m1macmini1/Desktop/my/android/VolleyCommunication/app/src/main/res/values/colors.xml",
                     "from": {
                         "startLines": "7,2,3,4,5,6,8",
                         "startColumns": "4,4,4,4,4,4,4",

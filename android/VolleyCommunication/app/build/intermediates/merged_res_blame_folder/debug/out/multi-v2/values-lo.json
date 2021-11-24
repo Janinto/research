@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/reborn-m1macmini1/AndroidStudioProjects/VolleyCommunication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo/values-lo.xml",
+            "outputFile": "/Users/reborn-m1macmini1/Desktop/my/android/VolleyCommunication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo/values-lo.xml",
             "map": [
                 {
                     "source": "/Users/reborn-m1macmini1/.gradle/caches/transforms-3/43711b72eaf2f529e5b9b1576380fb27/transformed/appcompat-1.3.1/res/values-lo/values-lo.xml",
