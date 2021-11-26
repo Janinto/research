@@ -1,10 +1,10 @@
-com/example/volleycommunication/AppHelper.java
- com.example.volleycommunication.AppHelper
-com/example/volleycommunication/BuildConfig.java
- com.example.volleycommunication.BuildConfig
 com/example/volleycommunication/MainActivity.java
  com.example.volleycommunication.MainActivity
  com.example.volleycommunication.MainActivity$1
  com.example.volleycommunication.MainActivity$2
  com.example.volleycommunication.MainActivity$3
  com.example.volleycommunication.MainActivity$4
+com/example/volleycommunication/BuildConfig.java
+ com.example.volleycommunication.BuildConfig
+com/example/volleycommunication/AppHelper.java
+ com.example.volleycommunication.AppHelper

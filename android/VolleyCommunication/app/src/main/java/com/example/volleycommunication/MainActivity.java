@@ -25,7 +25,9 @@ import java.util.Map;
 // 사용자가 스레드나 핸들러를 직접적으로 처리할 필요가 없어 코드양이 줄어들고 편리하다는 장점이있다.
 
 public class MainActivity extends AppCompatActivity {
+
     TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
     public void sendRequest(){
         String url = "https://m.naver.com";
 
-        //StringRequest를 만듬 (파라미터구분을 쉽게하기위해 엔터를 쳐서 구분하면 좋다)
-        //StringRequest는 요청객체중 하나이며 가장 많이 쓰인다고한다.
+
+
         //요청객체는 다음과 같이 보내는방식(GET,POST), URL, 응답성공리스너, 응답실패리스너 이렇게 4개의 파라미터를 리퀘스트에 전달할 수 있다.
         //화면에 결과를 표시할때 핸들러를 사용하지 않아도되는 장점이있다.
         StringRequest request = new StringRequest(
@@ -84,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         //결과적으로 이전 결과가 있어도 새로 요청한 응답을 보여줌
         request.setShouldCache(false);
         AppHelper.requestQueue.add(request);
-        println("요청 보냄!!");
+        println("요청 보냄");
     }
 
     public void println(String data){
