@@ -11,16 +11,16 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="clickBtn"
         android:text="로티 애니메이션"
-        android:textAllCaps="false"
-        android:onClick="clickBtn" />
-
+        android:textAllCaps="false" />
+기
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="스낵 바"
-        android:textAllCaps="false"
-        android:onClick="clickBtn2" />
+        android:onClick="clickBtn2"
+        android:text="터치 좌표 클릭하기"
+        android:textAllCaps="false" />
 
 
 </LinearLayout>

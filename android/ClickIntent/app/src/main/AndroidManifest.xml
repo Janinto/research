@@ -20,6 +20,7 @@
         </activity>
 
         <activity android:name=".SecondActivity" android:parentActivityName=".MainActivity" />
+        <activity android:name=".ForthActivity" android:parentActivityName=".MainActivity" />
         <activity android:name=".ThirdActivity" android:parentActivityName=".MainActivity"></activity>
     </application>
 
