@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="clickBtn1"
-        android:text="Third"
+        android:text="LifeCycle"
         android:textAllCaps="false"
         android:layout_marginTop="20dp"  />
 
