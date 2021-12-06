@@ -25,4 +25,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,ThirdActivity.class);
         startActivity(intent);
     }
+
+    public void clickBtn2(View view) {
+
+        Intent intent = new Intent(this,ForthActivity.class);
+        startActivity(intent);
+    }
+
+
 }

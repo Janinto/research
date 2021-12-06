@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ViewGroup">
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -26,6 +27,9 @@
             android:parentActivityName=".SecondActivity" />
         <activity
             android:name=".ThirdActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ForthActivity"
             android:parentActivityName=".MainActivity" />
     </application>
 

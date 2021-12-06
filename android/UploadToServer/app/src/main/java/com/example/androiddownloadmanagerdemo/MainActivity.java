@@ -60,9 +60,11 @@ public class MainActivity extends AppCompatActivity {
         download.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                beginDownload("http://ai-rebornsoft.asuscomm.com:22011/m/download/video");
+                //beginDownload("http://ai-rebornsoft.asuscomm.com:22011/static/video/some_value/some_value_20211130171900.mp4");
+                beginDownload("http://ai-rebornsoft.asuscomm.com:22011/m/download/video/");
             }
         });
+
 
         Button upload_file=findViewById(R.id.upload_file);
         upload_file.setOnClickListener(new View.OnClickListener() {
@@ -100,6 +102,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        Button advacneUpload=findViewById(R.id.advanceupload);
+        advacneUpload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,AdvanceFileUpload.class));
+            }
+        });
 
 
 
@@ -122,7 +131,9 @@ public class MainActivity extends AppCompatActivity {
                     .setTitle("Dummy")
                     .setDescription("Downloading")
                     .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+
                     .setDestinationUri(Uri.fromFile(file))
+
                     .setRequiresCharging(false)
                     .setAllowedOverMetered(true)
                     .setAllowedOverRoaming(true);
@@ -268,7 +279,7 @@ public class MainActivity extends AppCompatActivity {
             try{
                 RequestBody requestBody=new MultipartBody.Builder().setType(MultipartBody.FORM)
                         .addFormDataPart("file",file.getName(),RequestBody.create(MediaType.parse("image/*"),file))
-                        .addFormDataPart("userName","JAY")
+                        .addFormDataPart("userName","some_value")
                         //.addFormDataPart("submit","submit")
 
                         .build();
