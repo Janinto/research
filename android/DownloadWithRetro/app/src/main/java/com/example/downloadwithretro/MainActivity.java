@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       final FileDownloadService downloadService = ServiceGenerator.createService(FileDownloadService.class);
+
 
 
 
@@ -37,18 +37,24 @@ public class MainActivity extends AppCompatActivity {
 
         retrofitInterface = retrofit.create(RetrofitInterface.class);
 
+
+
         Post post = new Post("userName", "fileName");
 
         Call<Post> call = retrofitInterface.getPosts(post);
-
-
         call.enqueue(new Callback<Post>() {
             @Override
             public void onResponse(Call<Post> call, Response<Post> response) {
                 if(response.isSuccessful()){
 
                     Post result = response.body();
+                    Boolean status = result.getStatus();
+                    String dir = result.getDir();
+
                     Log.d(TAG,"onResponse: 성공, 결과\n"+ result.toString());
+                    if (status == true && !dir.equals("")) {
+
+                    }
                 } else {
                     Log.d(TAG,"onResponse: 실패");
                 }
@@ -57,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<Post> call, Throwable t) {
                 // 통신 실패
-                Log.d(TAG,"onFailureL: " + t.getMessage());
+                Log.d(TAG,"onFailure: " + t.getMessage());
             }
         });
 

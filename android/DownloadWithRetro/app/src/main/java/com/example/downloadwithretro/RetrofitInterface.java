@@ -18,7 +18,6 @@ public interface RetrofitInterface {
     @POST("/m/download/video")
     Call<Post> getPosts(@Body Post post);
 
-    @GET
-    @Streaming
-    Call<Post> downloadVideo(@Url String fileName);
+
+
 }
