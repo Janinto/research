@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<Post> call, Throwable t) {
                 // 통신 실패
-                Log.d(TAG,"onFailure: " + t.getMessage());
+                Log.d(TAG,"onFailure: 연결시간이 초과되었습니다." + t.getMessage());
             }
         });
 
@@ -168,19 +168,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void beginDownload(String file_link){
-        File file=new File(getExternalFilesDir(null),"Dummy");
+        // 파일 저장 경로
+        File file=new File(getExternalFilesDir(null),"reborn.mp4");
+     
 
         //checking if android version is equal and greater than noughat
 
         //now if download complete file not visible now lets show it
         DownloadManager.Request request=null;
+
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
             request=new DownloadManager.Request(Uri.parse(file_link))
-                    .setTitle("Dummy")
+                    .setTitle("reborn.mp4")
                     .setDescription("Downloading")
                     .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
 
                     .setDestinationUri(Uri.fromFile(file))
+
 
                     .setRequiresCharging(false)
                     .setAllowedOverMetered(true)
@@ -188,7 +192,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else{
             request=new DownloadManager.Request(Uri.parse(file_link))
-                    .setTitle("Dummy")
+                    .setTitle("reborn.mp4")
                     .setDescription("Downloading")
                     .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
                     .setDestinationUri(Uri.fromFile(file))
@@ -213,14 +217,19 @@ public class MainActivity extends AppCompatActivity {
 
     //now checking if download complete
 
+    // 다운로드가 되자마자 사용자가 직접 다운로드한 파일을 볼 수 있음
     private BroadcastReceiver onDownloadComplete=new BroadcastReceiver() {
+
         @Override
         public void onReceive(Context context, Intent intent) {
             long id=intent.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID,-1);
             if(downloadId==id){
                 Toast.makeText(MainActivity.this, "Download Completed", Toast.LENGTH_SHORT).show();
+
             }
+
         }
+
     };
 
     @Override
