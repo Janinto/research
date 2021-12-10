@@ -18,6 +18,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:tabTextAppearance="@style/tab_text"
         app:layout_constraintVertical_bias="0.348">
 
 
@@ -30,12 +31,12 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="팔 다리 근력" />
+            android:text="팔・다리 근력" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="몸통 서기 근력" />
+            android:text="몸통/서기 근력" />
 
 
         <com.google.android.material.tabs.TabItem
@@ -58,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5"/>
+        app:layout_constraintGuide_percent="0.396"/>
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -90,7 +91,6 @@
         android:id="@+id/frame1"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@android:color/holo_blue_light"
         app:layout_constraintTop_toTopOf="@id/guideline4"
         app:layout_constraintBottom_toBottomOf="@id/guideline5"
         app:layout_constraintStart_toStartOf="parent"
