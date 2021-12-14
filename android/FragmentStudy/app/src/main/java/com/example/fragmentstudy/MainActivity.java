@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity implements ColorListFragment
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 캐스팅해줘야함
+        // ColorFragment를 전역으로 빼준 후 캐스팅해줘야함
         mColorFragment = (ColorFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.fragment_color);
 
