@@ -11,7 +11,7 @@
         android:id="@+id/Placeholder"
         android:checkable="false"
         android:enabled="false"
-        />
+        android:title="" />
     <item
         android:id="@+id/action_in_tray"
         android:icon="@android:drawable/ic_menu_zoom"
