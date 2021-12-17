@@ -1,4 +1,4 @@
-package com.example.androiddownloadmanagerdemo;
+package com.example.downloadwithretro;
 
 import android.content.ContentUris;
 import android.content.Context;
@@ -10,6 +10,7 @@ import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 
 //This Class We Used to Get File Path from Device Each Android Version had Different type of Methods for accessing files. this is just a helper class for accessing file path
+// 장치에서 파일 경로를 가져오는 데 사용한 클래스 Android 버전마다 파일에 액세스하는 방법이 다릅니다. 파일 경로에 액세스하기 위한 도우미 클래스일 뿐입니다.
 public class FilePath {
 
     public static String getFilePath(Context context, Uri uri){

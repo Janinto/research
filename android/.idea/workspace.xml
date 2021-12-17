@@ -10,7 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8f0817a-2eb4-4eea-96fb-c1f75cbe7f6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Astron/DownloadWithRetro/app/src/main/java/com/example/downloadwithretro/FilePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Astron/DownloadWithRetro/app/src/main/java/com/example/downloadwithretro/FilePath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Astron/DownloadWithRetro/app/src/main/java/com/example/downloadwithretro/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Astron/DownloadWithRetro/app/src/main/java/com/example/downloadwithretro/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../study" beforeDir="false" afterPath="$PROJECT_DIR$/../study" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +20,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/reborn-m1macmini1/.android/avd/Pixel_3a_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/reborn-m1macmini1/.android/avd/Pixel_2_API_30.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -43,6 +45,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="memory.settings.postsync.last.time.stamp" value="1637283797831" />
   </component>
   <component name="RunManager">
@@ -126,5 +129,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

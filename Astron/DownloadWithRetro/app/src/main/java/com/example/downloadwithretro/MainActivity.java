@@ -179,19 +179,26 @@ public class MainActivity extends AppCompatActivity {
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
             request=new DownloadManager.Request(Uri.parse(file_link))
+                    // 노티피케이션에 보이는 타이틀
                     .setTitle("reborn.mp4")
+                    // 노티피케이션에 보이는 디스크립션
                     .setDescription("Downloading")
+
                     .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
 
+                    // 파일이 저장될 위치의 URI
                     .setDestinationUri(Uri.fromFile(file))
 
-
+                    // True로 설정되면, 단말이 충전중일 때만 다운로드합니다.
                     .setRequiresCharging(false)
+                    // True로 설정되면, 모바일 네트워크가 연결되었을 때도 다운로드 합니다.
                     .setAllowedOverMetered(true)
+                    // True로 설정되면, 로밍네트워크가 연결되었을 떄도 다운로드 합니다.
                     .setAllowedOverRoaming(true);
         }
         else{
             request=new DownloadManager.Request(Uri.parse(file_link))
+
                     .setTitle("reborn.mp4")
                     .setDescription("Downloading")
                     .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
@@ -199,6 +206,7 @@ public class MainActivity extends AppCompatActivity {
                     .setAllowedOverRoaming(true);
         }
 
+        // enqueue는 downloadid를 리턴하고 이 id는 다운로드 상태를 알거나 결과를 확인하기 위해 필요.
         DownloadManager downloadManager=(DownloadManager)getSystemService(DOWNLOAD_SERVICE);
         downloadId=downloadManager.enqueue(request);
 
@@ -300,7 +308,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
+    // 업로드 비동기처리.
     public class UploadTask extends AsyncTask<String,String,String> {
 
         @Override
@@ -368,6 +376,8 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+
 
 
 

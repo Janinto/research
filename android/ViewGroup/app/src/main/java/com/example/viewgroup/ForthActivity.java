@@ -13,7 +13,7 @@ public class ForthActivity extends AppCompatActivity {
         setContentView(R.layout.activity_forth);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("");
+        actionBar.setTitle("asd");
         actionBar.setDisplayHomeAsUpEnabled(true);
 
 

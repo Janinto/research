@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="이메일"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/Placeholder"
+        android:checkable="false"
+        android:enabled="false"
+        android:title="" />
+    <item
+        android:id="@+id/action_in_tray"
+        android:icon="@android:drawable/ic_menu_zoom"
+        android:title="설정"
+        app:showAsAction="ifRoom"/>
+
+
+
+</menu>
